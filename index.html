@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spiro E-commerce" />
+
+    <title>Spiro</title>
+
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Spiro</h1>
+        <nav>
+            <span class="about"><a href="#about">About</a></span>
+            <span >
+                <i class="cart fa-duotone fa-solid fa-cart-shopping"></i>
+                <p class="count">0</p>
+            </span>
+            <span><i class="login fa-duotone fa-solid fa-user"></i></span>
+        </nav>
+    </header>
+
+    <!--search bar-->
+    <form class="product-search">
+        <input type="text" id="search" placeholder="search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+            
+    </form>  
+<!-- container-->
+<div class="container">
+    <!--product 1-->
+    <div class="products">
+        <div class="image"><img src="images/Camera-1.png" alt="images"/></div>
+        <p class="name camera">Canon EOS R6</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹1,50,000</p>
+        <p class="MRP"><span>MRP:</span><del>₹2,50,000</del></p><p class="discount">discount: 40%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <!--product 2-->
+    <div class="products">
+        <div class="image"><img class="image" src="images/denver_.jpg" alt="images"/></div>
+        <p class="name perfume">Denver</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹480</p>
+        <p class="MRP"><span>MRP:</span><del>₹600</del><p class="discount">discount: 20%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <!--product 3-->
+    <div class="products">
+        <div class="image"><img class="image" src="images/phone1.jpg" alt="images"/></div>
+        <p class="name mobilephone"> Redmi Note 12</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹11,914</p>
+        <p class="MRP"><span>MRP:</span><del>₹13,999</del></p><p class="discount">discount: 15%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <!--product 4-->
+    <div class="products">
+        <div class="image"><img class="image" src="images/camera-2.png" alt="images"/></div>
+        <p class="name camera"> Sony Alpha 7 IV</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹1,68,000</p>
+        <p class="MRP"><span>MRP:</span><del>₹2,40,000</del></p><p class="discount">discount: 30%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <!--product 4-->
+    <div class="products">
+        <div class="image"><img class="image" src="images/foggs.jpg" alt="images"/></div>
+        <p class="name perfume">Fogg</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹720</p>
+        <p class="MRP"><span>MRP:</span><del>₹800</del></p><p class="discount">discount: 10%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <!--product 5-->
+    <div class="products">
+        <div class="image"><img class="image" src="images/phone3.avif"/></div>
+        <p class="name mobilephone">Samsung Galaxy M145G</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹11,043</p>
+        <p class="MRP"><span>MRP:</span><del>₹14,499</del></p><p class="discount">discount: 24%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <!--product 6-->
+    <div class="products">
+        <div class="image"><img class="image" src="images/perfume.jpg"/></div>
+        <p class="name perfume">Paristo</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹800</p>
+        <p class="MRP"><span>MRP:</span><del>₹1000</del></p><p class="discount">discount: 20%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <div class="products">
+        <div class="image"><img class="image" src="images/camera-4 (1).png"></div>
+        <p class="name camera">Nikon Z6 II</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹1,26,000</p>
+        <p class="MRP"><span>MRP:</span><del>₹1,80,000</del></p><p class="discount">discount: 30%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <div class="products">
+        <div class="image"><img class="image" src="images/phone4.jfif"></div>
+        <p class="name mobilephone"> Poco X5 Pro</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹16,019</p>
+        <p class="MRP"><span>MRP:</span><del>₹19,999</del></p><p class="discount">discount: 20%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <div class="products">
+        <div class="image"><img class="image" src="images/yardley.jpg"/></div>
+        <p class="name perfume">Yardley london</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹800</p>
+        <p class="MRP"><span>MRP:</span><del>₹1000</del></p><p class="discount">discount: 20%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <div class="products">
+            <div class="image"><img class="image" src="images/phone5.jfif"/></div>
+            <p class="name mobilephone">Vivo T2 5G</p>
+            <p class="Price"><span>Price:&nbsp;</span>₹11,043</p>
+            <p class="MRP"><span>MRP:</span><del>₹14,499</del></p><p class="discount">discount: 24%</p>
+            <button class="btn-1" onclick="buy()">BUY</button>
+            <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <div class="products">
+            <div class="image"><img class="image" src="images/phone7.jpg"></div>
+            <p class="name mobilephone">POCO X4 pro</p>
+            <p class="Price"><span>Price:&nbsp;</span>₹16,019</p>
+            <p class="MRP"><span>MRP:</span><del>₹19,999</del></p><p class="discount">discount: 20%</p>
+            <button class="btn-1" onclick="buy()">BUY</button>
+            <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <div class="products">
+        <div class="image"><img class="image" src="images/pngtree-cream-jar-vector-png-image_6636064.png"></div>
+        <p class="name Cream">Himalaya Facewash</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹400</p>
+        <p class="MRP"><span>MRP:</span><del>₹480</del></p><p class="discount">discount: 20%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+    <div class="products">
+        <div class="image"><img class="image" src="E:\Projects\NeuroNexus innovation\Product filter page -HTML,CSS,JS\images\pngwing.com.png"></div>
+        <p class="name Cream">Chainceness FaceWash</p>
+        <p class="Price"><span>Price:&nbsp;</span>₹500</p>
+        <p class="MRP"><span>MRP:</span><del>₹550</del></p><p class="discount">discount: 20%</p>
+        <button class="btn-1" onclick="buy()">BUY</button>
+        <button class="btn-2" onclick="addCart()">ADD CART</button>
+    </div>
+</div>
+ <!-- Modal Popup -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+        <h2 id="modalProductName">Product Name</h2>
+        <p>Price: ₹<span id="modalProductPrice">0</span></p>  <!-- Display product price -->
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity()">-</button>
+            <span id="modalQuantity">1</span>
+            <button onclick="increaseQuantity()">+</button>
+        </div>
+        <p>Total: ₹<span id="modalTotal">0</span></p> <!-- Display total price -->
+        <div class="modal-buttons">
+            <button onclick="confirmAddToCart()">Add to Cart</button>
+            <button onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+    </div>
+<!--About us and contact us-->
+    <footer>
+        <div id="about">
+            <p>
+                <span>About Us:</span><br>
+                    At Spiro, we are passionate about creating innovative tech solutions that empower businesses to
+                    reach
+                    new heights. Founded in 2015, Spiro has quickly become a trusted name in the industry, providing
+                    cutting-edge e-commerce services to clients around the world. Our dedicated team of experts
+                    focuses
+                    on delivering customized, scalable, and secure solutions tailored to meet the unique needs of each
+                    business. Whether you're looking to optimize operations, enhance customer experiences, or grow your
+                    digital presence, Spiro is here to help you navigate the future of technology.
+                    A critical challenge for any ecommerce website is being discovered in Search. Acquiring customers and building a relationship with them is an important driver of business growth, and Google can help shoppers discover your site at each stage in the shopping journey.This set of guides is for developers who are building websites and that want to ensure that the site works well with Google and follows SEO best practices. The focus is on online commerce sites (ecommerce), but many of the points are equally relevant to sites that list products that are only available at brick and mortar stores. When you share your ecommerce data and site structure with Google, Google can more easily find and parse your content, which allows your content to show up in Google Search and other Google surfaces. This can help shoppers find your site and products.
+            </p>
+        </div>
+            <address>
+                Address: 123 Innovation Avenue, Tech City, Nexus Park, New York, NY 10001<br>
+                Phone: +1 (555) 123-4567<br>
+                Email: support@spirotech.com
+            </address>
+    </footer>
+  
+<script src="script.js"></script>
+</body>
+
+</html>
